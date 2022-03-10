@@ -280,18 +280,18 @@ mod multisig {
         ///
         /// If `requirement` violates our invariant.
         #[ink(constructor)]
-        pub fn new(requirement: u32, owners: Vec<Vec<Vec<Hash>>>) -> Self {
+        pub fn new(requirement: u32, owners: Vec<Vec<Vec<AccountId>>>) -> Self {
             ink_lang::utils::initialize_contract(|contract: &mut Self| {
                 let mut owners = owners.get(0).unwrap().to_vec().get(0).unwrap().to_vec();
                 owners.sort_unstable();
                 owners.dedup();
-                // ensure_requirement_is_valid(owners.len() as u32, requirement);
+                ensure_requirement_is_valid(owners.len() as u32, requirement);
 
-                // for owner in &owners {
-                //     contract.is_owner.insert(owner, &());
-                // }
+                for owner in &owners {
+                    contract.is_owner.insert(owner, &());
+                }
 
-                contract.owners = Vec::new();
+                contract.owners = owners;
                 contract.transaction_list = Default::default();
                 contract.requirement = requirement;
             })

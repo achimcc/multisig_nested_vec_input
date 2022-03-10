@@ -1,6 +1,6 @@
 {
   "source": {
-    "hash": "0x502a0d5980bf40aa0461e5aa2477702debedef7083ba35b324f54d3847c624c7",
+    "hash": "0x822d9b4f5261c5217e3e898d7e4a37ca42db64db3b0c37043390572cdab67610",
     "language": "ink! 3.0.0-rc9",
     "compiler": "rustc 1.61.0-nightly"
   },
@@ -90,7 +90,7 @@
                 "displayName": [
                   "ConfirmationStatus"
                 ],
-                "type": 23
+                "type": 21
               }
             }
           ],
@@ -202,7 +202,7 @@
                 "displayName": [
                   "Result"
                 ],
-                "type": 27
+                "type": 25
               }
             }
           ],
@@ -457,7 +457,7 @@
           "payable": false,
           "returnType": {
             "displayName": [],
-            "type": 22
+            "type": 20
           },
           "selector": "0x37d395a9"
         },
@@ -515,7 +515,7 @@
             "displayName": [
               "ConfirmationStatus"
             ],
-            "type": 23
+            "type": 21
           },
           "selector": "0x41996bf0"
         },
@@ -575,7 +575,7 @@
             "displayName": [
               "Result"
             ],
-            "type": 24
+            "type": 22
           },
           "selector": "0x3cd4b36d"
         },
@@ -605,7 +605,7 @@
             "displayName": [
               "Result"
             ],
-            "type": 26
+            "type": 24
           },
           "selector": "0xda9878fb"
         }
@@ -1025,7 +1025,7 @@
         "type": {
           "def": {
             "sequence": {
-              "type": 20
+              "type": 16
             }
           }
         }
@@ -1034,45 +1034,15 @@
         "id": 20,
         "type": {
           "def": {
-            "sequence": {
-              "type": 21
-            }
-          }
-        }
-      },
-      {
-        "id": 21,
-        "type": {
-          "def": {
-            "composite": {
-              "fields": [
-                {
-                  "type": 4,
-                  "typeName": "[u8; 32]"
-                }
-              ]
-            }
-          },
-          "path": [
-            "ink_env",
-            "types",
-            "Hash"
-          ]
-        }
-      },
-      {
-        "id": 22,
-        "type": {
-          "def": {
             "tuple": [
               2,
-              23
+              21
             ]
           }
         }
       },
       {
-        "id": 23,
+        "id": 21,
         "type": {
           "def": {
             "variant": {
@@ -1102,7 +1072,7 @@
         }
       },
       {
-        "id": 24,
+        "id": 22,
         "type": {
           "def": {
             "variant": {
@@ -1119,7 +1089,7 @@
                 {
                   "fields": [
                     {
-                      "type": 25
+                      "type": 23
                     }
                   ],
                   "index": 1,
@@ -1135,7 +1105,7 @@
             },
             {
               "name": "E",
-              "type": 25
+              "type": 23
             }
           ],
           "path": [
@@ -1144,7 +1114,7 @@
         }
       },
       {
-        "id": 25,
+        "id": 23,
         "type": {
           "def": {
             "variant": {
@@ -1164,7 +1134,7 @@
         }
       },
       {
-        "id": 26,
+        "id": 24,
         "type": {
           "def": {
             "variant": {
@@ -1181,7 +1151,7 @@
                 {
                   "fields": [
                     {
-                      "type": 25
+                      "type": 23
                     }
                   ],
                   "index": 1,
@@ -1197,7 +1167,7 @@
             },
             {
               "name": "E",
-              "type": 25
+              "type": 23
             }
           ],
           "path": [
@@ -1206,7 +1176,7 @@
         }
       },
       {
-        "id": 27,
+        "id": 25,
         "type": {
           "def": {
             "variant": {
@@ -1214,7 +1184,7 @@
                 {
                   "fields": [
                     {
-                      "type": 28
+                      "type": 26
                     }
                   ],
                   "index": 0,
@@ -1223,7 +1193,7 @@
                 {
                   "fields": [
                     {
-                      "type": 25
+                      "type": 23
                     }
                   ],
                   "index": 1,
@@ -1235,11 +1205,11 @@
           "params": [
             {
               "name": "T",
-              "type": 28
+              "type": 26
             },
             {
               "name": "E",
-              "type": 25
+              "type": 23
             }
           ],
           "path": [
@@ -1248,7 +1218,7 @@
         }
       },
       {
-        "id": 28,
+        "id": 26,
         "type": {
           "def": {
             "variant": {
